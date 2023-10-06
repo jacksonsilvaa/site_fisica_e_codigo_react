@@ -1,0 +1,48 @@
+/*Rodapé*/
+
+.footer {
+    background-color: #2d275f; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center; /* Centralizar o texto horizontalmente */
+    padding: 20px; /* Espaçamento interno do rodapé */
+    position: fixed; /* Posição absoluta para fixar o rodapé na parte inferior da página */
+    width: 100%; /* Largura total do rodapé */
+    bottom: 0; /* Fixa o rodapé na parte inferior */
+    display:block;
+}
+
+/*Responsividade*/
+
+/* Estilos para telas */
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px)
+    {
+    .header-container {
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center; /* Centralize o conteúdo */
+        justify-content: space-between; /* Alinhe os elementos no espaço disponível */
+    }
+        
+    .menu-container {
+        margin-right: 0; /* Remova a margem direita */
+        text-align: right; /* Alinhe o texto à direita */
+    }
+    }
+
+/* Estilos para smartphones */
+@media only screen and (max-width: 480px) {
+    .header-container {
+        padding-left: 5%;
+        padding-right: 5%;
+        flex-direction: column; /* Altere para layout em coluna */
+        align-items: center; /* Centralize os elementos verticalmente */
+    }
+   
+    .menu-container {
+        margin-right: 0; /* Remova a margem direita */
+        text-align: center; /* Centralize o texto */
+        position: static; /* Restaure a posição padrão */
+    }
+
+}

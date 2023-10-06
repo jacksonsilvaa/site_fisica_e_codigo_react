@@ -1,0 +1,73 @@
+/* styles.css (ou estilos internos no <style> do HTML) */
+
+/* Estilos padrão */
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Adicionado */
+    padding: 0 20%;
+}
+
+.header-container .circulo {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-left: -25%;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.header-container .circulo:before,
+.header-container .circulo:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.header-container .circulo:before {
+    top: -29px;
+    border-bottom: 29px solid #3498db;
+}
+
+.header-container .circulo:after {
+    bottom: -29px;
+    border-top: 29px solid #3498db;
+}
+
+.header-container h1 {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.menu-container {
+    position: absolute;
+    right: 20px;
+    white-space: nowrap;
+    margin-right: 17%;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.menu-container ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.menu-container li {
+    display: inline;
+    padding: 5px;
+    white-space: nowrap;   
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Estilos de hover (quando o mouse passa por cima do link) */
+.menu-container a:hover {
+    color: #555; /* Cor alterada para destacar o link */
+}
