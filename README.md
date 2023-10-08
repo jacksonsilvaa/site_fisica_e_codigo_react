@@ -22,9 +22,8 @@ Certifique-se de ter as seguintes dependências instaladas em sua máquina:
 ## Crie uma Branch
 
 Crie uma nova branch para trabalhar no seu recurso ou correção. Dê um nome descritivo à branch:
-     ```bash 
-     git checkout -b nome-da-sua-branch
 
+  git checkout -b nome-da-sua-branch
 
 ## Faça Suas Alterações
 
@@ -37,9 +36,9 @@ Certifique-se de que suas modificações não causaram nenhum problema. Execute 
 ## Commit e Push
 
 Realize o commit das suas alterações utilizando os seguintes comandos:
-      ```bash
-      git commit -m "Descrição das suas modificações"
-      git push origin nome-da-sua-branch
+
+   git commit -m "Descrição das suas modificações"
+   git push origin nome-da-sua-branch
 
 ## Crie um Pull Request (PR)
 
